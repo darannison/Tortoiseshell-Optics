@@ -1,0 +1,320 @@
+/*************************************************************
+**************************************************************
+**********                                           *********
+**********          Website Styles                   *********
+**********                                           *********
+**************************************************************
+**************************************************************/
+
+/*------------------------------------------------------------
+----------------------Full page styles------------------------
+--------------------------------------------------------------*/
+
+html {
+  font-family: helvetica;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+/*------------------------------------------------------------
+----------------------main content styles------------------------
+--------------------------------------------------------------*/
+
+.main-ctr {
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-size: cover;
+}
+
+.main-pg-ctr {
+  width: 960px;
+  display: inline-flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.main-head-ctr {
+  width: 100%;
+  background-color: cadetblue;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.main-head-logo-ctr {
+  display: flex;
+  align-items: center;
+}
+
+.main-head-logo-ctr img {
+  height: 1.5rem;
+  margin: 1rem 1rem 1rem 2rem;
+}
+
+.main-head-menu-only {
+  display: none;
+}
+
+.main-head-menu-ctr {
+  display: flex;
+  align-items: center;
+}
+
+.main-head-menu-ctr span {
+  margin: 1rem 2rem 1rem 0;
+}
+
+.main-title-ctr {
+  align-self: flex-end;
+  position: relative;
+  left: 2rem;
+  display: flex;
+  margin-top: 10rem;
+  background-color: white;
+}
+
+.main-title-ctr h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 1.5rem 5rem;
+}
+
+/*------------------------------------------------------------
+----------------------info content styles------------------------
+--------------------------------------------------------------*/
+
+.info-ctr {
+  display: flex;
+  justify-content: center;
+}
+
+.info-pg-ctr {
+  width: 960px;
+  display: inline-flex;
+  flex-flow: column;
+}
+
+.info-services-ctr {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+/*---------Services part of info container ----------------->*/
+
+.service {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 8rem;
+}
+
+#paper-service {
+  margin-right: 6rem;
+}
+
+#ruler-service {
+  margin-right: 6rem;
+}
+
+.info-ctr .service img {
+  width: 3.5rem;
+}
+
+.info-ctr .service h4 {
+  text-align: center;
+}
+
+/*---------Philosophy and Appointments part of info container ---------->*/
+
+.info-philosophy-appointments-ctr {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  width: 100%;
+}
+
+.info-philosophy-appointments-ctr .info-item {
+  width: 35%;
+}
+
+.info-philosophy-appointments-ctr .item-title-ctr {
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-philosophy-appointments-ctr .info-item h3 {
+  font-weight: bold;
+  color: white;
+  margin: 0.5rem auto 0.5rem 1.25rem;
+}
+
+.info-philosophy-appointments-ctr .info-item  p {
+  margin-top: 1rem;
+}
+
+#philosophy {
+  margin-right: 5%;
+}
+
+/*---------Footer part of info container ---------->*/
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: azure;
+}
+
+.footer img {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+}
+
+/*************************************************************
+**************************************************************
+**********                                           *********
+**********          Responsive Styles                   *********
+**********                                           *********
+**************************************************************
+**************************************************************/
+
+/*------------------------------------------------------------
+----------------------Breakpoint 1: <1000px styles------------------------
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 800px) and (min-width: 436px) {
+
+  .main-ctr {
+    height: 22rem;
+  }
+
+  .main-head-ctr {
+    margin-top: 0;
+  }
+
+  .main-title-ctr {
+    left: 0;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .main-title-ctr h1 {
+    margin: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+
+}
+
+
+/*------------------------------------------------------------
+----------------------Breakpoint 2: <400px styles------------------------
+--------------------------------------------------------------*/
+
+  @media only screen and (max-width: 435px) {
+
+    .main-ctr {
+      height: 17rem;
+      background-position: 20%;
+    }
+
+    .main-pg-ctr {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: column wrap;
+    }
+
+    .main-head-ctr {
+      margin-top: 0;
+    }
+
+    .main-head-logo-ctr span {
+      display: none;
+    }
+
+    .main-head-menu-only {
+      display: flex;
+      margin-right: 3rem;
+    }
+
+    .main-head-menu-ctr {
+      display: none;
+    }
+
+    .main-title-ctr {
+      width: 100%;
+      left: 0;
+      margin: 6rem 0 0 0;
+    }
+
+    .main-title-ctr h1 {
+      margin: 1rem 4rem;
+      font-size: 1rem;
+    }
+
+    .info-services-ctr {
+      flex-flow: column wrap;
+      margin: 3.77rem auto;
+    }
+
+    #paper-service {
+      margin-right: 0;
+      margin-bottom: 1.54rem;
+    }
+
+    #ruler-service {
+      margin-right: 0;
+      margin-bottom: 1.54rem;
+    }
+
+    .info-ctr .service h4 {
+      font-size: 0.77rem;
+    }
+
+    .info-philosophy-appointments-ctr {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .info-philosophy-appointments-ctr .info-item {
+      width: 100%;
+    }
+
+    #philosophy {
+      margin-bottom: 4rem;
+    }
+
+    .info-philosophy-appointments-ctr .info-item p {
+      margin-top: 1rem;
+      padding: 0;
+      font-size: 0.77rem;
+    }
+
+    .footer {
+      justify-content: center;
+    }
+
+    .footer-copyright {
+      display: none;
+    }
+
+    .footer img {
+      margin: 4rem 0;
+    }
+
+
+
+  }
